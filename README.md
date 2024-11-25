@@ -10,4 +10,4 @@ La actividad se calificará por una serie de puntos asociados a cada actividad p
 - **Modelos**:Crear modelo y realizar migraciones a base de datos  (10 puntos).
 - **Serializadores**: Crear los serializadores para convertir y recibir JSON (10 puntos).
 - **Vistas y URL**: Crear el ViewSet y configurar los Router para las URL (15 puntos).
-- **Video**: Video de demostración con una duración no mayor a 4 minutos, en el video se debe explicar, el modelo propuesto, y hacer pruebas desde la interface web de Django-REST-Framework, Tambíen se deben hacer pruebas desde PostMAN. (15 puntos).
+- **Video**: Video de demostración con una duración no mayor a 4 minutos, en el video se debe explicar, el modelo propuesto, y hacer pruebas desde la interface web de Django-REST-Framework, También se deben hacer pruebas desde PostMAN. (15 puntos).
