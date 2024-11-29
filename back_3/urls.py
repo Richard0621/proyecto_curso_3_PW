@@ -16,7 +16,14 @@ Including another URLconf
 """
 
 from django.urls import path, include
+from rest_framework import routers
+
+from api import views
+
+routers = routers.DefaultRouter() # Se crea un objeto de la clase DefaultRouter
+routers.register(r'productos', views.ProductosViewSet) # Se registra la vista ProductosViewSet, es la direccion que se va a usar para acceder a la API
 
 urlpatterns = [
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('', include(routers.urls)), # Se incluyen las urls de la vista ProductosViewSet
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')) # Se incluyen las urls de autenticación de la API
 ]
